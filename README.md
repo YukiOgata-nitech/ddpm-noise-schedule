@@ -13,3 +13,10 @@
 - `data.py`：swiss roll の 2 次元データを作る
 - `ddpm.py`：ノイズを予測する小さな MLP（`Denoiser`）、学習（`train`）、サンプリング（`sample`）。今は linear スケジュールだけ
 - `metrics.py`：sliced Wasserstein 距離
+- `baseline.py`：ベースライン（linear）を seed 3 つで学習し、README の評価方法で測る
+
+## 動かし方
+
+```bash
+.venv/bin/python baseline.py
+```
